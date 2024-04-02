@@ -5,30 +5,21 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 version: 0.0.1+1
 
-flutter:
-  assets:
-    - assets/img/freedlv.png
-    - assets/img/dine in.png
-    - assets/img/online_order.png
-    - assets/img/bestseller.png
-    - assets/img/menusdc.png
-    - assets/img/supp.png
-
 environment:
   sdk: ^3.1.1
 
 dependencies:
   flutter:
     sdk: flutter
-
   english_words: ^4.0.0
   provider: ^6.0.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
   flutter_lints: ^2.0.0
 
 flutter:
+  assets:
+  - assets/
   uses-material-design: true
