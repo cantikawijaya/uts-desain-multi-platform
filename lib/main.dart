@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart' show AppBar, BuildContext, Column, Image, MaterialApp, Scaffold, SingleChildScrollView, StatelessWidget, Text, Widget, runApp;
+import 'package:flutter/material.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,45 +16,137 @@ class MyApp extends StatelessWidget {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              Column(
-                children: [
-                  Image.asset('assets/img/freedlv.png', width: 80, height: 80),
-                  Text('Free Delivery'),
-                ],
+              // Header
+              Container(
+                padding: EdgeInsets.all(16.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Image.asset('assets/img/Logo.png', width: 80, height: 50),
+                    Row(
+                      children: [
+                        TextButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => HomeScreen()),
+                            );
+                          },
+                          child: Text('Home'),
+                        ),
+                        TextButton(
+                          onPressed: () {
+                           Navigator.push(
+                            context,
+                              MaterialPageRoute(builder: (context) => MenuBookScreen()),
+                            );
+                          },
+                          child: Text('Menu Book'),
+                        ),
+                        TextButton(
+                          onPressed: () {
+                            Navigator.push(
+                             context,
+                              MaterialPageRoute(builder: (context) => ContactScreen()),
+                             );
+                          },
+                          child: Text('Contact'),
+                        ),
+                        IconButton(
+                          icon: Icon(Icons.store, color: Color(0xFF422D4D)),
+                          onPressed: () {
+                            Navigator.push(
+                             context,
+                              MaterialPageRoute(builder: (context) => CartScreen()),
+                            );
+                          },
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ),
-              Column(
-                children: [
-                  Image.asset('assets/img/dine in.png', width: 80, height: 80),
-                  Text('Dine In'),
-                ],
+              
+              Container(
+                padding: EdgeInsets.all(16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('Welcome To', style: TextStyle(fontSize: 24)),
+                    Text('Sugar Daddy', style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold)),
+                    Text('Coffee and Eatery', style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold)),
+                    Text('We ensure organic coffee for you. Hoping you and your family enjoy it.'),
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context, MaterialPageRoute(builder: (context) => MoreInfoScreen()),
+                          );
+                        },
+                        child: Text('See More'),
+                    ),
+                  ],
+                ),
               ),
-              Column(
-                children: [
-                  Image.asset('assets/img/online_order.png', width: 80, height: 80),
-                  Text('Online Order'),
-                ],
-              ),
-              Column(
-                children: [
-                  Image.asset('assets/img/bestseller.png', width: 80, height: 80),
-                  Text('Best Seller'),
-                ],
-              ),
-              Column(
-                children: [
-                  Image.asset('assets/img/menusdc.png', width: 80, height: 80),
-                  Text('Our Menu'),
-                ],
-              ),
-              Column(
-                children: [
-                  Image.asset('assets/img/supp.png', width: 80, height: 80),
-                  Text('CS 24/7'),
-                ],
-              ),
+              // Lanjutkan dengan bagian-bagian lainnya...
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+class HomeScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Home'),
+      ),
+      body: Center(
+        child: Text('Halaman Beranda'),
+      ),
+    );
+  }
+}
+
+class MenuBookScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Menu Book'),
+      ),
+      body: Center(
+        child: Text('Halaman Menu Book'),
+      ),
+    );
+  }
+}
+
+class ContactScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Contact'),
+      ),
+      body: Center(
+        child: Text('Halaman Kontak'),
+      ),
+    );
+  }
+}
+
+class CartScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Cart'),
+      ),
+      body: Center(
+        child: Text('Halaman Keranjang Belanja'),
       ),
     );
   }
