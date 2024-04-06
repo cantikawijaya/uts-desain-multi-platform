@@ -228,7 +228,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(menuItem.name),
-                  Text('Rp. ${menuItem.price.toStringAsFixed(2)}'), // Show price with 2 decimal places
+                  Text('Rp. ${menuItem.price.toStringAsFixed(3)}'), // Show price with 2 decimal places
                   Text(menuItem.description),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
