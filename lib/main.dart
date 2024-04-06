@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:namer_app/Breakfast_Detail_Page.dart';
+import 'package:namer_app/CoffeeDetailPage.dart';
+import 'package:namer_app/DessertDetailPage.dart';
+import 'package:namer_app/HealthyJuiceDetailPage.dart';
+import 'package:namer_app/TeaDetailPage.dart';
 
 void main() {
   runApp(MyApp());
