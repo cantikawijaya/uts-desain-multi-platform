@@ -17,8 +17,19 @@ class Breakfast_Detail_Page extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text('Category: $category'),
+                // Menu items list
+            Expanded(
+              child: ListView(
+                children: [
+                  _buildMenuItem('Pancakes', 'Rp. 25.000', 'assets/img/menusdc.png'),
+                  _buildMenuItem('Omelette', 'Rp. 20.000', 'assets/img/menusdc.png'),
+                  _buildMenuItem('Fruit Salad', 'Rp. 15.000', 'assets/img/menusdc.png'),
                 ],
               ),
             ),
+          ],
+        ),
+      ),
     );
   }
+  
