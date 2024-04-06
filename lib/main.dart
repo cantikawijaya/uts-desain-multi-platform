@@ -6,6 +6,20 @@ import 'package:namer_app/DessertDetailPage.dart';
 import 'package:namer_app/HealthyJuiceDetailPage.dart';
 import 'package:namer_app/TeaDetailPage.dart';
 
+class MenuItem {
+  final String name;
+  final String imageAssetPath;
+  final double price;
+  final String description;
+
+  MenuItem({
+    required this.name,
+    required this.imageAssetPath,
+    required this.price,
+    required this.description,
+  });
+}
+
 void main() {
   runApp(MyApp());
 }
