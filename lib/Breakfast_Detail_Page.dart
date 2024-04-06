@@ -21,16 +21,11 @@ class Breakfast_Detail_Page extends StatelessWidget {
             Expanded(
               child: ListView(
                 children: [
-                  _buildMenuItem('Smoothies Bowl', 'Rp. 25.000', 'assets/img/Smoothie.jpeg'),
-                  _buildMenuItem('Omelette', 'Rp. 20.000', 'assets/img/menusdc.png'),
-                  _buildMenuItem('Fruit Salad', 'Rp. 15.000', 'assets/img/menusdc.png'),
-                  _buildMenuItem('Pancakes', 'Rp. 25.000', 'assets/img/menusdc.png'),
-                  _buildMenuItem('Omelette', 'Rp. 20.000', 'assets/img/menusdc.png'),
-                  _buildMenuItem('Fruit Salad', 'Rp. 15.000', 'assets/img/menusdc.png'),
-                  _buildMenuItem('Pancakes', 'Rp. 25.000', 'assets/img/menusdc.png'),
-                  _buildMenuItem('Omelette', 'Rp. 20.000', 'assets/img/menusdc.png'),
-                  _buildMenuItem('Fruit Salad', 'Rp. 15.000', 'assets/img/menusdc.png'),
-                  _buildMenuItem('Fruit Salad', 'Rp. 15.000', 'assets/img/menusdc.png'),
+                  _buildMenuItem('Smoothies Bowl', 'Rp. 50.000', 'assets/img/Smoothie.jpeg'),
+                  _buildMenuItem('Hasbrown Omelette', 'Rp. 50.000', 'assets/img/Hashbrown.jpeg'),
+                  _buildMenuItem('Chicken Avo Salad', 'Rp. 50.000', 'assets/img/np2.jpeg'),
+                  _buildMenuItem('Caesar Salad', 'Rp. 50.000', 'assets/img/Salad.jpeg'),
+                  _buildMenuItem('Egg Benedict', 'Rp. 50.000', 'assets/img/np1.jpeg'),
                 ],
               ),
             ),
