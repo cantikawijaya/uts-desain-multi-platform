@@ -21,11 +21,11 @@ class DessertDetailPage extends StatelessWidget {
             Expanded(
               child: ListView(
                 children: [
-                  _buildMenuItem('Dads Healthy', 'Rp. 35.000', 'assets/img/np6.jpeg'),
-                  _buildMenuItem('Dads Energizer', 'Rp. 35.000', 'assets/img/np5.jpeg'),
-                  _buildMenuItem('Dads Green', 'Rp. 35.000', 'assets/img/np7.jpeg'),
-                  _buildMenuItem('Defrozz Berrys', 'Rp. 35.000', 'assets/img/np8.jpeg'),
-                  _buildMenuItem('Banana Juice', 'Rp. 35.000', 'assets/img/bananajc.jpg'),
+                  _buildMenuItem('Chocolate Brownies', 'Rp. 30.000', 'assets/img/Brownies.jpeg'),
+                  _buildMenuItem('Carrot Cake', 'Rp. 30.000', 'assets/img/np4.jpeg'),
+                  _buildMenuItem('Waffle With Ice Cream', 'Rp. 30.000', 'assets/img/waffle.jpg'),
+                  _buildMenuItem('Tiramisu Cake', 'Rp. 30.000', 'assets/img/tiramisu.jpg'),
+                  _buildMenuItem('Banana Caramel', 'Rp. 30.000', 'assets/img/bc.jpg'),
                 ],
               ),
             ),
