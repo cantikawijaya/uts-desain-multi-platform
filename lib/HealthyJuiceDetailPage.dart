@@ -9,7 +9,7 @@ class HealthyJuiceDetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Healthy Juice Detail'),
+        title: Text('Healthy Juice Menu'),
       ),
      body: Padding(
           padding: const EdgeInsets.all(16.0),
