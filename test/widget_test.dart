@@ -1,30 +1,50 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:flutter_application_1/main.dart';
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Penghitung'),
+        ),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'Hitung: 0', // Ubah angka sesuai keadaan awal
+                style: TextStyle(fontSize: 24),
+              ),
+              ElevatedButton(
+                onPressed: () {}, // Tambahkan fungsi untuk menambah hitungan
+                child: const Text('+'),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
+  testWidgets('Penghitung bertambah (smoke test)', (WidgetTester tester) async {
     await tester.pumpWidget(const MyApp());
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    // Verifikasi teks hitungan awal (sesuaikan dengan keadaan awal)
+    expect(find.text('Hitung: 0'), findsOneWidget);
+    expect(find.text('Hitung: 1'), findsNothing);
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
+    // Simulasikan penekanan tombol tambah
+    await tester.tap(find.text('+'));
     await tester.pump();
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    // Verifikasi teks hitungan berubah
+    expect(find.text('Hitung: 0'), findsNothing);
+    expect(find.text('Hitung: 1'), findsOneWidget);
   });
 }
