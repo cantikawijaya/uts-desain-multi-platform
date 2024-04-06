@@ -58,20 +58,20 @@ class MyHomePage extends StatefulWidget {
     MenuItem(
       name: 'Dads Healthy',
       imageAssetPath: 'assets/img/np6.jpeg',
-      price: 18,
+      price: 35,
       description: 'Whole Green Apple, Carrot, and Orange Juice.',
     ),
      MenuItem(
-      name: 'Dads Healthy',
-      imageAssetPath: 'assets/img/np6.jpeg',
-      price: 18,
-      description: 'Whole Green Apple, Carrot, and Orange Juice.',
+      name: 'Hashbrown Omelette',
+      imageAssetPath: 'assets/img/Hashbrown.jpeg',
+      price: 50,
+      description: 'A Perfect Harmony of Crispy Potatoes and Fluffy Eggs.',
     ),
      MenuItem(
-      name: 'Dads Healthy',
-      imageAssetPath: 'assets/img/np6.jpeg',
-      price: 18,
-      description: 'Whole Green Apple, Carrot, and Orange Juice.',
+      name: 'Chocolate Brownies',
+      imageAssetPath: 'assets/img/Brownies.jpeg',
+      price: 30,
+      description: 'Fudgy Chocolate Brownies, Indulge in Rich Chocolate Bliss.',
     ),
   ];
 
