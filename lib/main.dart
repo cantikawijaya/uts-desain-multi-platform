@@ -46,13 +46,13 @@ class MyHomePage extends StatefulWidget {
     MenuItem(
       name: 'Cappuccino',
       imageAssetPath: 'assets/img/cappucino.jpeg',
-      price: 25,
+      price: 35,
       description: 'A creamy and rich coffee drink with a foamy top.',
     ),
     MenuItem(
       name: 'English Breakfast Tea',
       imageAssetPath: 'assets/img/bftea.jpg',
-      price: 20,
+      price: 30,
       description: 'A  classic black tea blend known for its strong, rich flavor and invigorating character.',
     ),
     MenuItem(
