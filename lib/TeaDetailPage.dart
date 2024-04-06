@@ -22,10 +22,10 @@ class TeaDetailPage extends StatelessWidget {
               child: ListView(
                 children: [
                   _buildMenuItem('English Breakfast Tea', 'Rp. 30.000', 'assets/img/bftea.jpg'),
-                  _buildMenuItem('Jasmine tea', 'Rp. 30.000', 'assets/img/Hashbrown.jpeg'),
-                  _buildMenuItem('Earl Grey Tea', 'Rp. 30.000', 'assets/img/np2.jpeg'),
-                  _buildMenuItem('Ginger Tea', 'Rp. 30.000', 'assets/img/Salad.jpeg'),
-                  _buildMenuItem('Black Tea', 'Rp. 30.000', 'assets/img/np1.jpeg'),
+                  _buildMenuItem('Jasmine tea', 'Rp. 30.000', 'assets/img/jminetea.jpg'),
+                  _buildMenuItem('Earl Grey Tea', 'Rp. 30.000', 'assets/img/egtea.jpg'),
+                  _buildMenuItem('Ginger Tea', 'Rp. 30.000', 'assets/img/gingertea.jpg'),
+                  _buildMenuItem('Black Tea', 'Rp. 30.000', 'assets/img/blacktea.jpg'),
                 ],
               ),
             ),
