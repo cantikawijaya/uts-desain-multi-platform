@@ -21,11 +21,11 @@ class HealthyJuiceDetailPage extends StatelessWidget {
             Expanded(
               child: ListView(
                 children: [
-                  _buildMenuItem('Smoothies Bowl', 'Rp. 50.000', 'assets/img/Smoothie.jpeg'),
-                  _buildMenuItem('Hasbrown Omelette', 'Rp. 50.000', 'assets/img/Hashbrown.jpeg'),
-                  _buildMenuItem('Chicken Avo Salad', 'Rp. 50.000', 'assets/img/np2.jpeg'),
-                  _buildMenuItem('Caesar Salad', 'Rp. 50.000', 'assets/img/Salad.jpeg'),
-                  _buildMenuItem('Egg Benedict', 'Rp. 50.000', 'assets/img/np1.jpeg'),
+                  _buildMenuItem('Dads Healthy', 'Rp. 35.000', 'assets/img/np6.jpeg'),
+                  _buildMenuItem('Dads Energizer', 'Rp. 35.000', 'assets/img/np5.jpeg'),
+                  _buildMenuItem('Dads Green', 'Rp. 35.000', 'assets/img/np7.jpeg'),
+                  _buildMenuItem('Defrozz Berrys', 'Rp. 35.000', 'assets/img/np8.jpeg'),
+                  _buildMenuItem('Banana Juice', 'Rp. 35.000', 'assets/img/bananajc.jpg'),
                 ],
               ),
             ),
