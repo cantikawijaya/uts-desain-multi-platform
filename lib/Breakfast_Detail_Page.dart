@@ -11,14 +11,14 @@ class Breakfast_Detail_Page extends StatelessWidget {
       appBar: AppBar(
         title: Text('Healthy Juice Detail'),
       ),
-      body: Center(
-        child: Column(
-          children: <Widget>[
-            Text('Category: $category'),
-            // ... other UI elements like images, descriptions, lists, buttons
-          ],
-        ),
-      ),
+      body: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text('Category: $category'),
+                ],
+              ),
+            ),
     );
   }
-}
