@@ -42,6 +42,39 @@ class MyHomePage extends StatefulWidget {
 
   final String title;
 
+  List<MenuItem> menuItems = [
+    MenuItem(
+      name: 'Cappuccino',
+      imageAssetPath: 'assets/img/cappucino.jpeg',
+      price: 25,
+      description: 'A creamy and rich coffee drink with a foamy top.',
+    ),
+    MenuItem(
+      name: 'English Breakfast Tea',
+      imageAssetPath: 'assets/img/bftea.jpg',
+      price: 20,
+      description: 'A  classic black tea blend known for its strong, rich flavor and invigorating character.',
+    ),
+    MenuItem(
+      name: 'Dads Healthy',
+      imageAssetPath: 'assets/img/np6.jpeg',
+      price: 18,
+      description: 'Whole Green Apple, Carrot, and Orange Juice.',
+    ),
+     MenuItem(
+      name: 'Dads Healthy',
+      imageAssetPath: 'assets/img/np6.jpeg',
+      price: 18,
+      description: 'Whole Green Apple, Carrot, and Orange Juice.',
+    ),
+     MenuItem(
+      name: 'Dads Healthy',
+      imageAssetPath: 'assets/img/np6.jpeg',
+      price: 18,
+      description: 'Whole Green Apple, Carrot, and Orange Juice.',
+    ),
+  ];
+
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
