@@ -21,7 +21,7 @@ class Breakfast_Detail_Page extends StatelessWidget {
             Expanded(
               child: ListView(
                 children: [
-                  _buildMenuItem('Pancakes', 'Rp. 25.000', 'assets/img/menusdc.png'),
+                  _buildMenuItem('Smoothies Bowl', 'Rp. 25.000', 'assets/img/Smoothie.jpeg'),
                   _buildMenuItem('Omelette', 'Rp. 20.000', 'assets/img/menusdc.png'),
                   _buildMenuItem('Fruit Salad', 'Rp. 15.000', 'assets/img/menusdc.png'),
                   _buildMenuItem('Pancakes', 'Rp. 25.000', 'assets/img/menusdc.png'),
