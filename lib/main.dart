@@ -37,6 +37,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key? key, required this.title}) : super(key: key);
 
@@ -61,13 +62,13 @@ class MyHomePage extends StatefulWidget {
       price: 35,
       description: 'Whole Green Apple, Carrot, and Orange Juice.',
     ),
-     MenuItem(
+    MenuItem(
       name: 'Hashbrown Omelette',
       imageAssetPath: 'assets/img/Hashbrown.jpeg',
       price: 50,
       description: 'A Perfect Harmony of Crispy Potatoes and Fluffy Eggs.',
     ),
-     MenuItem(
+    MenuItem(
       name: 'Chocolate Brownies',
       imageAssetPath: 'assets/img/Brownies.jpeg',
       price: 30,
@@ -78,6 +79,7 @@ class MyHomePage extends StatefulWidget {
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
+
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
@@ -91,12 +93,10 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            // Banner
             Container(
               height: MediaQuery.of(context).size.height * 0.3,
               child: Stack(
                 children: [
-                  // Background image
                   Image.asset(
                     'assets/img/banner3.jpeg',
                     width: double.infinity,
@@ -104,7 +104,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     fit: BoxFit.cover,
                     alignment: Alignment.center,
                   ),
-                  // Text on top of the image
                   Center(
                     child: Text(
                       'Sugar Daddy\nCoffee and Eatery',
@@ -120,9 +119,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
               ),
             ),
-            // Search Bar
             Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: EdgeInsets.all(16.0),
               child: Row(
                 children: [
                   Expanded(
@@ -141,9 +139,9 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              padding: EdgeInsets.all(16.0),
+              child: Wrap(
+                alignment: WrapAlignment.spaceEvenly,
                 children: <Widget>[
                   _buildMenuItem('Coffee', Icons.coffee, () => navigateToMenuPage('Coffee')),
                   _buildMenuItem('Tea', Icons.local_drink, () => navigateToMenuPage('Tea')),
@@ -154,7 +152,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
               ),
             ),
-            // Daftar Menu
             _buildMenuList(),
           ],
         ),
@@ -171,33 +168,33 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void navigateToMenuPage(String category) {
-  late Widget page;
-  switch (category) {
-    case 'Coffee':
-      page = CoffeeDetailPage(category: category);
-      break;
-    case 'Tea':
-      page = TeaDetailPage(category: category);
-      break;
-    case 'Healthy Juice':
-      page = HealthyJuiceDetailPage(category: category);
-      break;
-    case 'Breakfast':
-      page = Breakfast_Detail_Page(category: category);
-      break;
-    case 'Dessert':
-      page = DessertDetailPage(category: category);
-      break;
-    default:
-      return;
+    late Widget page;
+    switch (category) {
+      case 'Coffee':
+        page = CoffeeDetailPage(category: category);
+        break;
+      case 'Tea':
+        page = TeaDetailPage(category: category);
+        break;
+      case 'Healthy Juice':
+        page = HealthyJuiceDetailPage(category: category);
+        break;
+      case 'Breakfast':
+        page = Breakfast_Detail_Page(category: category);
+        break;
+      case 'Dessert':
+        page = DessertDetailPage(category: category);
+        break;
+      default:
+        return;
+    }
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => page,
+      ),
+    );
   }
-  Navigator.push(
-    context,
-    MaterialPageRoute(
-      builder: (context) => page,
-    ),
-  );
-}
 
   Widget _buildMenuList() {
     return ListView.builder(
@@ -213,7 +210,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget _buildMenuItemCard(MenuItem menuItem) {
     return Card(
       child: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: EdgeInsets.all(16.0),
         child: Row(
           children: [
             Image.asset(
